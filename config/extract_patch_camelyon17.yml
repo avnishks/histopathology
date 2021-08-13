@@ -1,0 +1,15 @@
+base_dir: "/export/datasets/public/Camelyon17/"
+mask_dir: "//export/datasets/public/Camelyon17/masks/"
+stitch_dir: "./datasets/Camelyon17/stitches/"
+
+tiling_arguments:
+    level: 8 # 0-9 (or 0-8) in (some) Chamelyon17 tif images; ideally set to level_count-1 for each slide
+    level: 16 #patch_level
+    patch_size: 256
+    rows_per_txn: 200
+    limit_bounds: True
+    pixel_overlap: 64 #overlap in patch extraction
+    storage_option: 'hdf5' #choose either one of 'hdf5' or 'disk'
+    patch_dir_h5: "/export/datasets/public/Camelyon17/patches/h5/"
+    patch_dir_png: "/export/datasets/public/Camelyon17/patches/png/"
+    label_filepath: "/export/datasets/public/Camelyon17/training/stage_labels.csv"
