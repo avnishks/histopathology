@@ -1,0 +1,3 @@
+- TileMap:
+    """Visualisation for slide tiles.
+https://gitlab.com/deep.TEACHING/educational-materials/-/blob/master/notebooks/medical-image-classification/preprocessing/util.py
